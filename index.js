@@ -4,6 +4,7 @@ import {fileURLToPath} from "url";
 import {dirname} from "path";
 import ejs from "ejs";
 
+
 //initializes express framework within our Node Project
 const app = express(); 
 
@@ -28,6 +29,21 @@ app.get("/", (req, res)=>
 {
     res.render(___dirname + "/views/index.ejs");
 });
+
+
+//TODO: create reviews page listing review articles 
+app.get("/reviews", (req, res)=>
+{
+    res.render(___dirname + "/views/reviews.ejs");
+});
+
+app.get("/portfolio", (req, res)=>
+{
+    res.statusCode = 302;
+    res.setHeader("Location", "https://bidus92.github.io/JB-Portfolio/");
+    res.end(); 
+});
+
 
 //assign our port to the server to handle this node app/website; 
 app.listen(port, ()=>
