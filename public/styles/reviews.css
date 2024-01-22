@@ -1,0 +1,49 @@
+movie-reviews
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 300px 300px;
+    column-gap: 100px; 
+    row-gap: 20px; 
+    justify-content: center;
+}
+
+.photo-cred
+{
+    margin: 0px; 
+    padding: 0px; 
+}
+
+.movie-title
+{
+    text-align: center; 
+    font-weight: bolder;
+}
+.review-grids
+{
+    display: flex; 
+    flex-direction: column;
+    text-align: center; 
+}
+
+#grid-1
+{
+    grid-area: 1/1/1/1; 
+}
+
+#grid-2
+{
+    grid-area: 1/2/1/2; 
+}
+
+#grid-3
+{
+    grid-area: 2/1/2/1; 
+}
+
+
+.review-img
+{
+    width: 300px; 
+    height: 300px; 
+}

@@ -13,11 +13,17 @@ header, footer
     width: 100vw; 
     height: 15vh; 
     gap: 30px;  
-    z-index: 0; 
+    z-index: 1; 
     overflow: hidden;
     font-size: 24px;
 }
 
+.nav-link
+{
+    color: #39A7FF; 
+    z-index: 2; 
+    padding-right: 20px; 
+}
 
 #blog-title
 {
@@ -25,27 +31,29 @@ header, footer
     font-weight: bolder;
     font-size: 32px;
     margin-right: auto; 
+    padding-left: 15px; 
 }
 
 /*TODO: Align footer to the bottom of the page by default while taking into consideration other parts*/
 footer
 {
-    height: 10vh; 
     font-size: 15px;
+    top: 10px;
+    height: 10vh; 
 }
 
 #copyright
 {
+    display: inline;
     align-self: flex-end;
     color: #39A7FF; 
     font-weight: bolder;
     margin-right: auto; 
+    padding-left: 15px; 
 }
 
 footer > .nav-link
 {
-    color: #39A7FF; 
-    z-index: 1; 
     align-self: flex-end;
 }
 

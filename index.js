@@ -27,14 +27,14 @@ app.use(theBody);
 
 app.get("/", (req, res)=>
 {
-    res.render(___dirname + "/views/index.ejs");
+    res.render(___dirname + "/views/partials/index.ejs");
 });
 
 
 //TODO: create reviews page listing review articles 
 app.get("/reviews", (req, res)=>
 {
-    res.render(___dirname + "/views/reviews.ejs");
+    res.render(___dirname + "/views/partials/reviews.ejs");
 });
 
 app.get("/portfolio", (req, res)=>
