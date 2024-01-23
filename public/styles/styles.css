@@ -5,6 +5,30 @@ body
     z-index: 1;
 }
 
+.title
+{
+    font-weight: bolder;
+    font-size: 35pt; 
+}
+.sub-title
+{
+    font-weight: bold; 
+    font-size: 24pt;
+}
+.text-block
+{
+    width: 800px; 
+    font-size: x-large;
+    text-align: center;
+}
+hr
+{ 
+   background-color: white; 
+   width: 100%; 
+   border-width: 2px; 
+   border-color: white;
+   border-style: solid;
+}
 #main-flex-container
 {
     display: flex; 
@@ -20,14 +44,46 @@ body
     align-items: center;
 }
 
-#movie_goers_img
+#img-grid
+{
+    display: grid; 
+    grid-template-rows: 1fr; 
+    grid-template-columns: 1fr 1fr;
+    gap: 50px; 
+}
+
+.image
 {
     width: 400px; 
     height: 200px; 
 }
-#photo-credit
+
+#movie_goers_img
+{
+    grid-area: 1/1/1/1;
+}
+
+#cinema_img
+{
+    grid-area: 1/2/1/2;
+}
+
+#you_img
+{
+    width: 600px; 
+    height: 400px; 
+}
+.photo-credit
 {
     margin: 0px; 
     padding: 0px; 
     text-align: center;
 }   
+
+#exclamation
+{
+    font-size: 20pt;
+    color: yellow;
+    font-weight: bold;
+
+}

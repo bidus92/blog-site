@@ -1,14 +1,42 @@
 <%-include("header.ejs")%>
 <homepage>
     <div id="homepage">
-        <h1>Welcome to Core Media Reviews!</h1>
-        <div><img id="movie_goers_img" src="assets/images/movie_goers.jpg"alt="People sitting in a theater watching a movie"/>
-            <p id="photo-credit">Photo by 
-            <a href="https://unsplash.com/@jakehills?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jake Hills</a> 
-            on <a href="https://unsplash.com/photos/group-of-people-staring-at-monitor-inside-room-23LET4Hxj_U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            </p>
+        <h1 class="title" id="welcome">Welcome to Core Media Reviews!</h1>
+        <div id="img-grid">
+            <div><img class="image" id="movie_goers_img" src="assets/images/movie_goers.jpg"alt="People sitting in a theater watching a movie"/>
+                <p class="photo-credit">Photo by 
+                <a href="https://unsplash.com/@jakehills?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jake Hills</a> 
+                on <a href="https://unsplash.com/photos/group-of-people-staring-at-monitor-inside-room-23LET4Hxj_U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </div>
+            <div><img class="image" id="cinema_img" src="assets/images/cinema.jpg" alt="A cinema with a sign saying the same in neon lights"/>
+                 <p class="photo-credit">Photo by <a href="https://unsplash.com/@myke_simon?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Myke Simon</a> 
+                    on <a href="https://unsplash.com/photos/photography-of-cinema-atsUqIm3wxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                 </p>
+            </div>
         </div>
-        <h2>Watching all the movies and shows so you don't have to 📽🎞</h2>
+        
+        <h2 class="sub-title">Watching all the movies and shows so you don't have to 📽🎞</h2>
+        <p><hr></p>
+
+        <h2 class="title">What Makes Us Different?</h2>
+        <img class="image" id="you_img" src="assets/images/you.jpg" alt="Man pointing out the screen at you, the viewer"/>
+        <p class="photo-credit">Photo by <a href="https://unsplash.com/@fideletty?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Etty Fidele</a> 
+            on <a href="https://unsplash.com/photos/man-pointing-straight-ahead-K_xXdh4lNJM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+        <div class="text-block">
+            <p>When it comes to movie reviews, we make it a point to have a well-rounded take
+            on all of the films we review: the good, the bad, the so-bad-their-good, and the mid (aka the ugly). That's only a part
+            of it. What really makes us different is....<span id="exclamation">YOU!!!!</span> You get to review any movie you like and post about it! Unbiased and unfiltered, 
+            you will get to give your own personal take and share with others your thoughts about your favorite flicks! This site can't exist without you, so let us know what you
+            think about our reviews and make some of your own!
+            </p>
+       </div>
+       <p><hr></p>
+       <h2 class="title">Happy Reviewing 😊</h2>
+       <div class="text-block">
+        <p> Feel free to check out our movie reviews <a href="/reviews">here</a> , or write your own <a href="/submit">here</a></p>
+       </div>
     </div>
 </homepage>
 <%-include("footer.ejs")%>

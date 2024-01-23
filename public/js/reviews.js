@@ -1,16 +1,25 @@
-$("#grid-1").hide(); 
-$("#grid-2").hide(); 
-$("#grid-3").hide();
+$(".review-grids").hide();
 
-$("#grid-1").fadeIn(800).slideDown(); 
 
 
 setTimeout(()=>
 {
-   $("#grid-2").fadeIn(800); 
-}, "600");
+    $("#grid-1").slideDown(800)  ; 
+}, "500");
+
+
+setTimeout(()=>
+{
+   $("#grid-2").slideDown(800); 
+}, "1100");
 
 setTimeout(()=>
 {
    $("#grid-3").fadeIn(800); 
-}, "1400");
+}, "2000");
+
+
+setTimeout(()=>
+{
+   $("#grid-4").fadeIn(800); 
+}, "2300");

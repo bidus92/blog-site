@@ -25,16 +25,10 @@ const theBody = bodyParser.urlencoded({extended: true});
 //implement body-parser middleware in our express framework
 app.use(theBody);
 
+//GETS
 app.get("/", (req, res)=>
 {
     res.render(___dirname + "/views/partials/index.ejs");
-});
-
-
-//TODO: create reviews page listing review articles 
-app.get("/reviews", (req, res)=>
-{
-    res.render(___dirname + "/views/partials/reviews.ejs");
 });
 
 app.get("/portfolio", (req, res)=>
@@ -43,6 +37,33 @@ app.get("/portfolio", (req, res)=>
     res.setHeader("Location", "https://bidus92.github.io/JB-Portfolio/");
     res.end(); 
 });
+
+
+app.get("/reviews", (req, res)=>
+{
+    res.render(___dirname + "/views/partials/reviews.ejs");
+});
+
+app.get("/reviews/f13-part-4", (req, res)=>
+{
+    res.render(___dirname + "/views/partials/reviews/f13.ejs");
+});
+
+app.get("/reviews/batman-forever", (req, res)=>
+{
+    res.render(___dirname + "/views/partials/reviews/batman.ejs");
+});
+
+app.get("/reviews/rots", (req, res)=>
+{
+    res.render(___dirname + "/views/partials/reviews/rots.ejs");
+});
+
+app.get("/reviews/goldeneye", (req, res)=>
+{
+    res.render(___dirname + "/views/partials/reviews/goldeneye.ejs");
+});
+
 
 
 //assign our port to the server to handle this node app/website; 
