@@ -34,9 +34,15 @@
        </div>
        <p><hr></p>
        <h2 class="title">Happy Reviewing 😊</h2>
+       <img class="in_review_img" src="/assets/images/typing.jpg" alt="Typing on a laptop"/>
+       <p class="photo-credit">Photo by <a href="https://unsplash.com/@christinhumephoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christin Hume</a> 
+         on <a href="https://unsplash.com/photos/person-using-laptop-computer-Hcfwew744z4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+       </p>  
        <div class="text-block">
-        <p> Feel free to check out our movie reviews <a href="/reviews">here</a> , or write your own <a href="/submit">here</a></p>
+        <p> Feel free to check out our movie reviews <a href="/reviews">here</a> , or check out what people are saying <a href="/submit">here</a></p>
        </div>
+       <%-include("./review_submission_form.ejs")%>
     </div>
+    
 </homepage>
 <%-include("footer.ejs")%>

@@ -38,6 +38,15 @@ app.get("/portfolio", (req, res)=>
     res.end(); 
 });
 
+app.get("/submit", (req, res)=>
+{
+    res.render(___dirname + "/views/partials/submit.ejs");
+});
+
+app.post("/submit", (req, res)=>
+{
+   res.render("/views/partials/submit.ejs"); 
+});
 
 app.get("/reviews", (req, res)=>
 {

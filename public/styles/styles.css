@@ -1,8 +1,22 @@
 body
 {
-    background-color: #39A7FF;
+    background: linear-gradient(to left, blue, #39A7FF);
     color: white; 
     z-index: 1;
+}
+
+a:visited, a:link
+{
+    color: #39A7FF; 
+}
+
+p > a:link, p > a:visited
+{
+    color: #FFEED9;; 
+}
+p > a:hover
+{
+    color: white; 
 }
 
 .title
