@@ -82,6 +82,10 @@ mov-review, review-submission
     height: 400px; 
 }
 
+
+
+
+/*COMMENT SECTION*/
 #review-submission-form
 {
     display: flex; 
@@ -91,6 +95,7 @@ mov-review, review-submission
     gap: 10px; 
 
 }
+
 #viewer_post_title
 {
     width: 300px; 
@@ -113,4 +118,36 @@ mov-review, review-submission
 #review-post-title
 {
     align-self: center;
+}
+
+
+.comment-section
+{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-top: 20px; 
+}
+#comments
+{
+    display: flex; 
+    flex-direction: column;
+    width: 100vw;
+    gap: 30px; 
+    justify-content: flex-start;
+    margin-bottom: 150px;
+    background-color: blue;
+}
+
+#comment-title
+{
+    align-self: center;
+    font-size: 24pt;
+    margin: 0px; 
+}
+ul
+{
+    list-style-type: none;
 }
