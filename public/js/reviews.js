@@ -1,12 +1,8 @@
 $(".review-grids").hide();
-
-
-
 setTimeout(()=>
 {
     $("#grid-1").slideDown(800)  ; 
 }, "500");
-
 
 setTimeout(()=>
 {
@@ -17,7 +13,6 @@ setTimeout(()=>
 {
    $("#grid-3").fadeIn(800); 
 }, "2000");
-
 
 setTimeout(()=>
 {

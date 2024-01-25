@@ -2,8 +2,8 @@ import express from "express";
 import bodyParser from "body-parser"; 
 import {fileURLToPath} from "url";
 import {dirname} from "path";
-import ejs from "ejs";
 import path from "path-locator"; //key
+import ejs from "ejs";
 
 //initializes express framework within our Node Project
 const app = express(); 

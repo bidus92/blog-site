@@ -12,7 +12,6 @@ dna-strand
     width: 100vw;
 }
 
-
 dna-strand > span
 {
    width: 200px; 
@@ -24,7 +23,6 @@ dna-strand > span
    animation: dnaAnim 2s linear infinite;
    
 }
-
 
 dna-strand > span::before, dna-strand > span::after
 {
@@ -46,8 +44,6 @@ dna-strand > span::before
     left: -18px; 
 }
 
-
-
 @keyframes dnaAnim
 {
     0%
@@ -59,7 +55,6 @@ dna-strand > span::before
         transform: rotateY(359deg);
     }
 }
-
 
 span:nth-child(2)
 {
